@@ -81,7 +81,7 @@
 			<ul>
 				<li>App version: <g:meta name="app.version"/></li>
 				<li>Grails version: <g:meta name="app.grails.version"/></li>
-				<li>Groovy version: ${org.codehaus.groovy.runtime.InvokerHelper.getVersion()}</li>
+				<li>Groovy version: ${GroovySystem.getVersion()}</li>
 				<li>JVM version: ${System.getProperty('java.version')}</li>
 				<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
 				<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
@@ -98,6 +98,7 @@
 		</div>
 		<div id="page-body" role="main">
 			<h1>Welcome to Grails Build Info Plugin Test App</h1>
+            <p>App version <g:meta name="app.version"/> Grails <g:meta name="app.grails.version"/></p>
 			<p>build:buildInfo tag:<br><build:buildInfo/></p>
 			<p>build:buildDate tag:<br><build:buildDate/></p>
 			<p>build:gitCommit tag:<br><build:gitCommit/></p>

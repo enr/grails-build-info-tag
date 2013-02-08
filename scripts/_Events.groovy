@@ -57,3 +57,4 @@ eventStatusFinal = { message ->
 eventCreateWarStart = { warName, stagingDir ->
     writeBuildInfoFile("${stagingDir}/WEB-INF/classes/build.info")
 }
+

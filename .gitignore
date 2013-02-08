@@ -5,4 +5,6 @@ target
 stacktrace.log
 /plugin.xml
 *~
-
+/grails-app/conf/UrlMappings.groovy
+/web-app
+/grails-app/i18n/
